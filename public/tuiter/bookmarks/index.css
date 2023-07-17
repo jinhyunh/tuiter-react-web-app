@@ -1,0 +1,110 @@
+.wd-margin-bookmarks-top-left-right {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.wd-bookmark-title {
+    font-size:large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-thin-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.wd-ul-tuit {
+    padding-left: 0;
+    list-style:none;
+}
+
+.wd-li-point-tuit {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    object-fit: cover;
+}
+
+.wd-col-aligned-page {
+    width: max(7%, 60px);
+    float: left;
+}
+
+.wd-top-align {
+    vertical-align: top;
+}
+
+.wd-canadian-flag-icon {
+    background-color: white;
+    color: red;
+}
+
+.wd-font-size-large {
+    font-size: large;
+}
+
+.wd-font-size-small {
+    font-size: small;
+}
+
+
+.wd-padded-left {
+    padding-left: 6px;
+}
+
+.wd-tuit-image-div {
+    padding-right: 2%;
+}
+
+.wd-tuit-image {
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-image-text {
+    padding-top: 10px;
+}
+
+.wd-image-between-text {
+    padding-top: 5px;
+}
+
+.wd-tuit-padding {
+    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.wd-li-tabs {
+    list-style: none;
+    width: 20%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-tuitter-icons {
+    width: 16px;
+    height: 14px;
+}
+
+.wd-button {
+    background-color: transparent;
+    border: none;
+}
+
+.wd-fg-color-pink {
+    color:#FF69B4;
+}
+
+.wd-tuit-border-bottom {
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-tuit-image-text-padding {
+    padding-bottom: 5px;
+}

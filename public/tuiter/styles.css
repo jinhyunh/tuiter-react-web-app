@@ -1,0 +1,49 @@
+.wd-center-aligned {
+    text-align: center;
+}
+
+.wd-fg-color-gray {
+    color: gray;
+}
+
+.wd-flex-container {
+    display: flex;
+}
+
+.wd-fill-width {
+    flex: 1;
+}
+
+.wd-btn {
+    border: none; /* Remove borders */
+    cursor: pointer; /* Mouse pointer on hover */
+    background-color: transparent;
+}
+
+.wd-bg-color-yellow {
+    background-color: yellow;
+}
+
+.wd-tuiter-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 20px;
+}
+
+.wd-text-decoration-none {
+    text-decoration: none;
+}
+
+.wd-fg-color-black {
+    color:black;
+}
+
+.wd-fg-color-tuitter-blue {
+    color:#26a7de;
+}
+
+.wd-font-bold {
+    font-weight: bold;
+}

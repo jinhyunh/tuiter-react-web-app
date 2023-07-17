@@ -1,0 +1,179 @@
+.wd-rounded-corners-right {
+    border-right: 15px;
+}
+
+.wd-bg-color-lightgray {
+    background-color: lightgray;
+}
+
+.wd-bg-color-yellow {
+    background-color: yellow;
+}
+
+.wd-search-tuiter-input {
+    outline: none;
+    border: none;
+}
+
+.wd-search-tuiter-icon {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.wd-padding-top-bot {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.wd-col-nine-tenths-page {
+    width: 90%;
+    float: left;
+}
+
+.wd-col-one-tenths-page {
+    width: 10%;
+    float: left;
+}
+
+.wd-grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.wd-grid-col-main-content {
+    width: 80%;
+    float: left;
+}
+
+.wd-margin-top-left-right {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.wd-li-tabs {
+    list-style: none;
+    width: 20%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-label-active {
+    font-weight: bold;
+    padding-bottom: 5%;
+    border-bottom: 4px #26a7de solid;
+    border-radius: 10%;
+}
+
+.wd-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.wd-bottom-left-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-image {
+    width: 100%;
+}
+
+.wd-li-tuits{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.wd-tuit-main-content {
+    font-weight: bold;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+    font-size: medium;
+}
+
+.wd-tuit-side-content {
+    font-size: small;
+    color: gray;
+}
+
+.wd-fg-color-black {
+    color:black;
+}
+
+.wd-margin-left-right {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.wd-margin-left {
+    margin-left: 5%;
+}
+
+.wd-margin-left-right-small {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.wd-margin-top {
+    margin-top: 2%;
+}
+
+.wd-bg-color-white {
+    background-color: white;
+}
+
+.wd-bg-color-blue {
+    background-color: blue;
+}
+
+.wd-font-size-xlarge {
+    font-size: x-large;
+}
+
+.wd-right-aligned {
+    text-align: right;
+}
+
+.wd-rounded-corners-percentage {
+    border-radius: 15%;
+}
+
+.wd-vertical-center {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wd-follow-image {
+    width: 48px;
+    height: 48px;
+}
+
+.row .wd-follow-padding {
+    padding-left: 0%;
+}
+
+.wd-padding-left {
+    padding-left: 10px;
+}
+
+.wd-margin-bottom {
+    border-bottom: 0px;
+}
+
+.wd-text-align-right {
+    text-align: right;
+}
+
+.wd-padding-text-lg {
+    margin-top: 3%;
+}
