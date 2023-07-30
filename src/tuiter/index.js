@@ -23,7 +23,7 @@ function Tuiter() {
                 <div className="col-2">
                     <NavigationSidebar />
                 </div>
-                <div className="col-7">
+                <div className="col-10 col-lg-7">
                     <Routes>
                         <Route path="/" element={<Navigate to="/tuiter/home"/>} />
                         <Route path="/home" element={<HomeScreen />} />
@@ -32,7 +32,7 @@ function Tuiter() {
                         <Route path="/profile" element={<ProfileScreen />} />
                     </Routes>
                 </div>
-                <div className="col-3">
+                <div className="col-3 d-none d-lg-block">
                     <WhoToFollowList />
                 </div>
             </div>
