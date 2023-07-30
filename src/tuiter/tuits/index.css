@@ -1,0 +1,15 @@
+.wd-red-like {
+    color : red;
+}
+
+.wd-no-like {
+    color : black;
+}
+
+.wd-padded-left {
+    padding-left: 10px;
+}
+
+.wd-padded-right {
+    padding-right: 10px;
+}
