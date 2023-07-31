@@ -20,10 +20,10 @@ function Tuiter() {
         <Provider store={store}>
             <Nav />
             <div className="row">
-                <div className="col-2">
+                <div className="col-3 col-lg-2">
                     <NavigationSidebar />
                 </div>
-                <div className="col-10 col-lg-7">
+                <div className="col-9 col-lg-7">
                     <Routes>
                         <Route path="/" element={<Navigate to="/tuiter/home"/>} />
                         <Route path="/home" element={<HomeScreen />} />
