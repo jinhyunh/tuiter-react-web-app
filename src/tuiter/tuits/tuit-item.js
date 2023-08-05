@@ -6,10 +6,12 @@ import { BsFillHeartFill } from "react-icons/bs";
 import { FiShare } from "react-icons/fi";
 import { BsDot } from "react-icons/bs";
 import { GrFormClose } from "react-icons/gr";
+import { BsFillHandThumbsDownFill } from "react-icons/bs";
 
 
 import { useDispatch } from "react-redux";
-import { tuitLikedToggle, deleteTuit } from "../reducers/tuits-reducer";
+import { tuitLikedToggle } from "../reducers/tuits-reducer";
+import { updateTuitThunk, deleteTuitThunk } from "../services/tuits-thunks";
 import "./index.css";
 
 const TuitItem = (
@@ -29,7 +31,7 @@ const TuitItem = (
         dispatch(tuitLikedToggle(tuit))
     }
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
@@ -67,12 +69,24 @@ const TuitItem = (
                             </label>
                         </span>
                         <span style={{ "cursor": "pointer" }} onClick={() => toggleTuitLiked(tuit)} className="col-3" >
-                            <BsFillHeartFill className={tuit.liked ? "wd-red-like" : "wd-no-like"} />
+                            <BsFillHeartFill className="text-danger"
+                                onClick={() =>
+                                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+                                } />
                             <label className="wd-padded-left">
                                 {tuit.likes}
                             </label>
                         </span>
-                        <span className="col-3">
+                        <span className="col-auto" >
+                            <BsFillHandThumbsDownFill className="text-primary"
+                                onClick={() =>
+                                    dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }))
+                                } />
+                            <label className="wd-padded-left">
+                                {tuit.dislikes}
+                            </label>
+                        </span>
+                        <span className="col-auto">
                             <FiShare />
                         </span>
                     </div>
