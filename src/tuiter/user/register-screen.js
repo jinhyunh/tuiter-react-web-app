@@ -46,8 +46,6 @@ function RegisterScreen() {
                 Register
             </button>
         </div>
-
     );
-
 }
 export default RegisterScreen;
