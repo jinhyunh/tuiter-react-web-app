@@ -25,8 +25,6 @@ function ProfileScreen() {
     return (
         <div>
             <h1>Profile Screen</h1>
-            <pre>{JSON.stringify(profile, null, 2)}</pre>
-            <pre>{JSON.stringify(currentUser, null, 2)}</pre>
             {profile && (
                 <div>
                     <div>
