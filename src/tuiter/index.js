@@ -13,6 +13,7 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
+import AuthContext from "./services/auth-context";
 const store = configureStore(
     {
         reducer: {
@@ -27,26 +28,28 @@ const store = configureStore(
 function Tuiter() {
     return (
         <Provider store={store}>
-            <Nav />
-            <div className="row">
-                <div className="col-3 col-lg-2">
-                    <NavigationSidebar />
+            <AuthContext>
+                <Nav />
+                <div className="row">
+                    <div className="col-3 col-lg-2">
+                        <NavigationSidebar />
+                    </div>
+                    <div className="col-9 col-lg-7">
+                        <Routes>
+                            <Route path="/" element={<Navigate to="/tuiter/home" />} />
+                            <Route path="/home" element={<HomeScreen />} />
+                            <Route path="/explore" element={<ExploreScreen />} />
+                            <Route path="/bookmarks" element={<BookmarksScreen />} />
+                            <Route path="/login" element={<LoginScreen />} />
+                            <Route path="/register" element={<RegisterScreen />} />
+                            <Route path="/profile" element={<ProfileScreen />} />
+                        </Routes>
+                    </div>
+                    <div className="col-3 d-none d-lg-block">
+                        <WhoToFollowList />
+                    </div>
                 </div>
-                <div className="col-9 col-lg-7">
-                    <Routes>
-                        <Route path="/" element={<Navigate to="/tuiter/home" />} />
-                        <Route path="/home" element={<HomeScreen />} />
-                        <Route path="/explore" element={<ExploreScreen />} />
-                        <Route path="/bookmarks" element={<BookmarksScreen />} />
-                        <Route path="/login" element={<LoginScreen />} />
-                        <Route path="/register" element={<RegisterScreen />} />
-                        <Route path="/profile" element={<ProfileScreen />} />
-                    </Routes>
-                </div>
-                <div className="col-3 d-none d-lg-block">
-                    <WhoToFollowList />
-                </div>
-            </div>
+            </AuthContext>
         </Provider>
     );
 }
